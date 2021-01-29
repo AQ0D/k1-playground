@@ -8,9 +8,10 @@ spec:
   accessModes:
   - ReadWriteOnce
   - ReadOnlyMany
+  persistentVolumeReclaimPolicy: Delete
   storageClassName: nfs
   capacity:
     storage: 1Gi
   nfs:
-    server: 
+    server: 161.35.181.17
     path: /share
